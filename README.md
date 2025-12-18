@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub Repository](https://github.com/jabssdev/single-price-grid)
-- Live Site URL: [Live Demo](https://single-price-grid-jabssdev.netlify.app/)
+- Live Site URL: [Live Demo](https://single-price-grid-delta-nine.vercel.app/)
 
 ## My process
 

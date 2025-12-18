@@ -14,9 +14,6 @@ This is a solution to the [Single price grid component challenge on Frontend Men
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -29,85 +26,81 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![Single Price Grid Component Screenshot](./src/assets/images/screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [GitHub Repository](https://github.com/jabssdev/single-price-grid)
+- Live Site URL: [Live Demo](https://single-price-grid-jabssdev.netlify.app/)
 
 ## My process
 
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
+- Tailwind CSS v4 - Utility-first CSS framework
+- CSS Grid for responsive layout
+- Flexbox for component structure
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- Vite 7 - Next generation frontend tooling
+- @tailwindcss/vite - Tailwind CSS v4 Vite plugin
+- Prettier - Code formatting with Tailwind plugin
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+Through this project, I deepened my understanding of several key concepts:
 
-To see how you can add code snippets, see below:
+**1. CSS Grid with Tailwind CSS for Responsive Layouts**
+
+Implementing an efficient grid layout that adapts from mobile to tablet/desktop:
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<article
+  class="max-w-xs rounded-md bg-white shadow-xl md:grid md:max-w-xl md:grid-cols-2"
+>
+  <section class="md:col-span-2">
+    <!-- First section spans full width -->
+  </section>
+  <section>
+    <!-- Second section takes half width -->
+  </section>
+  <section>
+    <!-- Third section takes half width -->
+  </section>
+</article>
 ```
 
-```css
-.proud-of-this-css {
-	color: papayawhip;
-}
-```
-
-```js
-const proudOfThisFunc = () => {
-	console.log("🎉");
-};
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+Using `md:grid md:grid-cols-2` creates a two-column grid at medium breakpoints and above. The first section uses `md:col-span-2` to span both columns, while the remaining sections automatically occupy one column each. This approach is clean, maintainable, and leverages CSS Grid's natural flow behavior.
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+In future projects, I want to continue focusing on:
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+- **Advanced CSS Grid Patterns**: Exploring complex grid layouts, grid template areas, and subgrid for more intricate designs
+- **Tailwind CSS v4 Advanced Features**: Container queries, advanced theming patterns, and custom variants
+- **Performance Optimization**: Implementing modern image formats (WebP/AVIF), analyzing Core Web Vitals, and optimizing font loading strategies
+- **Accessibility Excellence**: Conducting automated testing (axe DevTools) and manual testing with screen readers (NVDA, JAWS, VoiceOver)
+- **Advanced Vite Configuration**: Code splitting strategies, lazy loading patterns, and bundle size analysis
+- **Interactive State Management**: Adding focus-visible states, keyboard navigation, and ARIA live regions
+- **Design Systems**: Creating reusable, scalable component libraries with Tailwind
+- **Motion and Animation**: Implementing accessible animations respecting `prefers-reduced-motion`
+- **Progressive Enhancement**: Ensuring core functionality works without JavaScript
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [Tailwind CSS v4 Documentation](https://tailwindcss.com/docs) - Essential guide for understanding the new v4 syntax and @theme directive
+- [MDN: CSS Grid Layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout) - Comprehensive guide to CSS Grid properties and patterns
+- [CSS-Tricks: A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/) - Visual reference for all grid properties
+- [Vite Documentation](https://vite.dev/) - Comprehensive guide to Vite's features and configuration
+- [web.dev: Font Best Practices](https://web.dev/font-best-practices/) - Guide for optimizing custom font loading and preventing layout shifts
+- [Variable Fonts Guide](https://web.dev/variable-fonts/) - Understanding variable fonts and their benefits
+- [MDN: ARIA Labels](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-label) - Best practices for accessible link and button labels
+- [Prettier Plugin for Tailwind CSS](https://github.com/tailwindlabs/prettier-plugin-tailwindcss) - Automatic class sorting for consistent code style
+- [Lightning CSS](https://lightningcss.dev/) - Fast CSS bundler and minifier for modern builds
+- [A11Y Project: Accessibility Checklist](https://www.a11yproject.com/checklist/) - Comprehensive accessibility guidelines
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- LinkedIn - [@jabssdev](https://www.linkedin.com/in/jabssdev/)
+- Frontend Mentor - [@jabssdev](https://www.frontendmentor.io/profile/jabssdev)
+- Instagram - [@jabssdev](https://www.instagram.com/jabssdev/)

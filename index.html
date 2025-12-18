@@ -43,31 +43,52 @@
     />
     <link rel="stylesheet" href="/src/style.css" />
   </head>
-  <body>
+  <body
+    class="flex min-h-dvh flex-col items-center justify-center gap-4 bg-teal-100 p-6"
+  >
     <main>
-      <article>
+      <article
+        class="max-w-xs rounded-md bg-white shadow-xl md:grid md:max-w-xl md:grid-cols-2"
+      >
         <h1 class="sr-only">Single Price Grid Component</h1>
-        <section>
-          <h2>Join our community</h2>
-          <p>30-day, hassle-free money back guarantee</p>
-          <p>
+        <section class="flex flex-col gap-4 p-6 md:col-span-2 md:p-8 md:pr-10">
+          <h2 class="text-lg font-bold tracking-tight text-teal-500">
+            Join our community
+          </h2>
+          <p class="leading-5 text-green-400">
+            30-day, hassle-free money back guarantee
+          </p>
+          <p class="mb-2 text-sm leading-7 text-gray-500 md:leading-6">
             Gain access to our full library of tutorials along with expert code
             reviews. Perfect for any developers who are serious about honing
             their skills.
           </p>
         </section>
-        <section>
-          <h2>Monthly Subscription</h2>
-          <div>
-            <p>&dollar;29</p>
-            <span>per month</span>
+        <section
+          class="flex flex-col gap-4 bg-teal-500 p-6 text-white md:rounded-es-md md:p-8"
+        >
+          <h2 class="font-bold">Monthly Subscription</h2>
+          <div class="flex flex-col gap-2">
+            <div class="flex items-center gap-3">
+              <p class="text-3xl font-bold">&dollar;29</p>
+              <span class="text-teal-450 text-sm">per month</span>
+            </div>
+            <p class="text-sm text-teal-100">
+              Full access for less than &dollar;1 a day
+            </p>
           </div>
-          <p>Full access for less than &dollar;1 a day</p>
-          <button type="button">Sign Up</button>
+          <button
+            class="mt-3 rounded-md bg-green-400 py-2.5 font-bold text-white shadow-xl"
+            type="button"
+          >
+            Sign Up
+          </button>
         </section>
-        <section>
-          <h2>Why Us</h2>
-          <ul>
+        <section
+          class="flex flex-col gap-4 rounded-ee-md rounded-es-md bg-teal-400 p-6 text-white md:rounded-ee-md md:rounded-es-none md:p-8"
+        >
+          <h2 class="font-bold">Why Us</h2>
+          <ul class="text-sm text-teal-100">
             <li>Tutorials by industry experts</li>
             <li>Peer &amp; expert code review</li>
             <li>Coding exercises</li>
@@ -79,10 +100,11 @@
         </section>
       </article>
     </main>
-    <footer>
+    <footer class="text-center text-xs text-teal-400">
       <p>
         Challenge by
         <a
+          class="font-bold underline hover:text-teal-500"
           href="https://www.frontendmentor.io?ref=challenge"
           target="_blank"
           rel="noopener noreferrer"
@@ -92,6 +114,7 @@
         </a>
         . Coded by
         <a
+          class="font-bold underline hover:text-teal-500"
           href="https://www.linkedin.com/in/jabssdev/"
           target="_blank"
           rel="noopener noreferrer"

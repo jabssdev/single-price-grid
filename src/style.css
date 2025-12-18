@@ -11,8 +11,10 @@
 
 @theme {
   --color-teal-500: hsl(179, 62%, 43%);
-  --color-green-400: hsl(71, 73%, 54%);
+  --color-teal-450: hsl(179, 63%, 67%);
+  --color-teal-400: hsl(179, 47%, 52%);
   --color-teal-100: hsl(204, 43%, 93%);
+  --color-green-400: hsl(71, 73%, 54%);
   --color-gray-500: hsl(218, 22%, 67%);
 
   --font-sans: 'Karla', sans-serif;
